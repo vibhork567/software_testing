@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  backend:
+          image: vib123/bypass_test_backend   
+          build: .
+          ports:
+                 - "9090:9090"
+  frontend:
+         image: vib123/bypass_test_frontend
+         build: ./bidding-frontend/
+         ports:
+                 - "3000:3000"
+
